@@ -32,3 +32,14 @@ export const markupProduct = ({
        <p>Description: ${description}</p>
      </li>`;
 };
+
+// task 3
+
+export const markupNewProduct = ({ id, description, price, brand, title }) => {
+  return `<li data-id="${id}">
+       <h3>Brand: ${brand}</h3>
+       <h4>Model: ${title}</h4>
+       <p>Price: ${price}</p>
+       <p>Description: ${description}</p>
+     </li>`;
+};

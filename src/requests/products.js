@@ -9,3 +9,9 @@ export async function getAllProducts() {
 export async function getProductById(id) {
   return await dummyApi.get(`/products/${id}`);
 }
+
+//  TASK 3
+
+export async function addProduct(newProduct) {
+  return await dummyApi.post('/products/add', newProduct);
+}
